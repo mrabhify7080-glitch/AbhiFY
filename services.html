@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services | AbhiFY — Digital Marketing & Freelance Agency</title>
+<meta name="description" content="Explore AbhiFY's full spectrum of freelance & agency services: Content Writing, Graphic Design, Web Development, Digital Marketing, Video Editing, Admin Support, Tech & Photography.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css?v=2">
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<link rel="apple-touch-icon" href="logo.jpg">
+</head>
+<body>
+<div class="page-wipe"></div>
+
+<!-- PRELOADER -->
+<div id="loader" class="global-preloader">
+  <div class="preloader-bg">
+    <canvas id="preloader-particles"></canvas>
+    <div class="preloader-grid"></div>
+    <div class="preloader-beam"></div>
+  </div>
+  <div class="preloader-content">
+    <div class="preloader-logo-wrap">
+      <img src="logo.jpg" alt="AbhiFY Logo" class="preloader-logo-img">
+    </div>
+    <div class="logo-seq">
+      <span class="p-letter">A</span>
+      <span class="p-letter">B</span>
+      <span class="p-letter">H</span>
+      <span class="p-letter">I</span>
+      <span class="p-letter p-red">F</span>
+      <span class="p-letter p-red">Y</span>
+      <div class="plane-wrap">
+        <i class="fa-solid fa-paper-plane"></i>
+        <div class="plane-trail"></div>
+      </div>
+      <div class="scan-beam"></div>
+    </div>
+    <p class="preloader-tagline">Where Ideas Become Digital Success.</p>
+    <div class="preloader-progress-box">
+      <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+      <span class="preloader-pct" id="preloaderPct">0%</span>
+    </div>
+  </div>
+</div>
+
+<div id="cursor-glow"></div>
+<div id="cursor-dot"></div>
+<div id="scroll-progress"></div>
+
+<!-- NAVIGATION -->
+<header id="site-header">
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo" aria-label="AbhiFY Home"><img src="logo.jpg" alt="AbhiFY Logo" class="brand-logo-img"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta btn-ripple"><span>Let's Grow</span> <i class="fa-solid fa-arrow-right-long cta-arrow"></i></a>
+      <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    </nav>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html" class="active">Services</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-grid"></div>
+  <div class="glow-orb o1"></div>
+  <div class="glow-orb o2"></div>
+  <div class="page-hero-content" style="display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; max-width: 1100px; margin: 0 auto;">
+    <div style="flex: 1; min-width: 300px;">
+      <span class="section-tag">Explore Our Capabilities</span>
+      <h1>Our Freelance &amp; <span>Agency Services</span></h1>
+      <p>From Content Writing and Design to Full Web App Development, Marketing, Video Editing, and Support — explore our comprehensive solutions.</p>
+    </div>
+    
+    <!-- 📷 PHOTO SPOT: Services Hero Image - file: services-hero.png -->
+    <div class="reveal-zoom" style="flex: 0 0 auto; max-width: 380px; width: 100%;">
+      <div style="border-radius: var(--radius-card); overflow: hidden; border: 2px solid var(--btn-primary); box-shadow: var(--shadow-soft); aspect-ratio: 16/10; background: rgba(166,124,82,0.06); display: flex; align-items: center; justify-content: center;">
+        <img src="services-hero.png" alt="AbhiFY Services" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=padding:30px;text-align:center;color:var(--text-secondary)><i class=fa-solid\ fa-layer-group style=font-size:40px;margin-bottom:10px;display:block;opacity:0.4></i><p style=font-size:12px;opacity:0.6>services-hero.png</p></div>';">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STICKY CATEGORY NAVIGATION TABS -->
+<nav class="category-sticky-nav" id="catStickyNav">
+  <div class="container">
+    <div class="cat-nav-wrapper">
+      <a href="#cat-content-writing" class="cat-nav-pill active"><i class="fa-solid fa-pen-fancy"></i> Content Writing</a>
+      <a href="#cat-graphic-design" class="cat-nav-pill"><i class="fa-solid fa-palette"></i> Graphic Design</a>
+      <a href="#cat-web-dev" class="cat-nav-pill"><i class="fa-solid fa-code"></i> Web &amp; App Dev</a>
+      <a href="#cat-digital-marketing" class="cat-nav-pill"><i class="fa-solid fa-bullhorn"></i> Digital Marketing</a>
+      <a href="#cat-video-audio" class="cat-nav-pill"><i class="fa-solid fa-film"></i> Video &amp; Audio</a>
+      <a href="#cat-business-admin" class="cat-nav-pill"><i class="fa-solid fa-user-gear"></i> Business &amp; Admin</a>
+      <a href="#cat-sales-consulting" class="cat-nav-pill"><i class="fa-solid fa-handshake"></i> Sales &amp; Consulting</a>
+      <a href="#cat-tech-data" class="cat-nav-pill"><i class="fa-solid fa-chart-line"></i> Tech &amp; Data</a>
+      <a href="#cat-education-coaching" class="cat-nav-pill"><i class="fa-solid fa-graduation-cap"></i> Education &amp; Coaching</a>
+      <a href="#cat-photography" class="cat-nav-pill"><i class="fa-solid fa-camera"></i> Photography</a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN SERVICES CONTAINER -->
+<div class="container" style="padding-bottom: 80px;">
+
+  <!-- CATEGORY 1: CONTENT WRITING -->
+  <section id="cat-content-writing" class="category-section">
+    <div class="category-header reveal">
+      <div class="cat-svg-box">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+      </div>
+      <div class="cat-header-text">
+        <div class="cat-title-wrap">
+          <h2>Content Writing</h2>
+          <span class="cat-count-badge">6 Services</span>
+        </div>
+        <p>SEO articles, persuasive sales copy, professional resumes, and precision editing for maximum impact.</p>
+      </div>
+    </div>
+
+    <div class="services-price-grid">
+      <!-- Card 1 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-pen-fancy"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Blog / Article Writing</h3>
+          <p>Well-researched, SEO-friendly articles tailored to drive traffic and engage your readers.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Blog%2FArticle%20Writing." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-bullhorn"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Copywriting</h3>
+          <p>High-converting website copy, sales landing pages, ad copy, and persuasive brand messaging.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Copywriting." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-file-user"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Resume / CV Writing</h3>
+          <p>Professional ATS-compliant resumes and compelling cover letters designed to get you hired.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Resume%2FCV%20Writing." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-file-signature"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Proofreading &amp; Editing</h3>
+          <p>Meticulous grammar correction, flow optimization, tone enhancement, and formatting check.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Proofreading%20%26%20Editing." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-language"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Translation</h3>
+          <p>Accurate, context-aware multilingual translation for web content, documents, and books.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Translation." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-headphones"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Transcription</h3>
+          <p>Clear, verbatim speech-to-text transcriptions with timestamping for interviews &amp; audio clips.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Transcription." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATEGORY 2: GRAPHIC DESIGN -->
+  <section id="cat-graphic-design" class="category-section">
+    <div class="category-header reveal">
+      <div class="cat-svg-box">
+        <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61.43.53 1.03.89 1.7.89h2.33c.83 0 1.5-.67 1.5-1.5 0-.41-.17-.79-.44-1.06l-.56-.56c-.28-.28-.43-.65-.43-1.06 0-.83.67-1.5 1.5-1.5H15c2.76 0 5-2.24 5-5 0-4.42-3.58-8-8-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9s1.5.67 1.5 1.5S7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+      </div>
+      <div class="cat-header-text">
+        <div class="cat-title-wrap">
+          <h2>Graphic Design</h2>
+          <span class="cat-count-badge">5 Services</span>
+        </div>
+        <p>Stunning brand identities, social templates, pitch decks, and modern UI/UX interface designs.</p>
+      </div>
+    </div>
+
+    <div class="services-price-grid">
+      <!-- Card 1 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-palette"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Logo Design</h3>
+          <p>Unique vector logo design, custom iconography, brand color palette, and usage guidelines.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Logo%20Design." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-icons"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Social Media Post Design</h3>
+          <p>Eye-catching Instagram carousels, Facebook ad banners, and story creative templates.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Social%20Media%20Post%20Design." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-vector-square"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Poster / Banner Design</h3>
+          <p>High-resolution print and digital posters, promotional flyers, web banners, and billboards.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Poster%2FBanner%20Design." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-file-powerpoint"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Presentation (PPT) Design</h3>
+          <p>Luxury corporate PowerPoint and Google Slides decks crafted to win investors and clients.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Presentation%20(PPT)%20Design." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-object-group"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>UI/UX Design</h3>
+          <p>User-centric website layouts, app screen wireframes, and interactive Figma prototypes.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20UI%2FUX%20Design." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATEGORY 3: WEB & APP DEVELOPMENT -->
+  <section id="cat-web-dev" class="category-section">
+    <div class="category-header reveal">
+      <div class="cat-svg-box">
+        <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+      </div>
+      <div class="cat-header-text">
+        <div class="cat-title-wrap">
+          <h2>Web &amp; App Development</h2>
+          <span class="cat-count-badge">4 Services</span>
+        </div>
+        <p>Custom websites, high-converting landing pages, robust web applications, and ongoing bug maintenance.</p>
+      </div>
+    </div>
+
+    <div class="services-price-grid">
+      <!-- Card 1 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-code"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Website Development</h3>
+          <p>Full-stack, responsive websites built with modern HTML5, CSS3, JavaScript &amp; clean design.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Website%20Development." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Landing Page</h3>
+          <p>Single-page lead generation hubs optimized for ad campaigns, fast loading, and conversions.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Landing%20Page%20Development." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-layer-group"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Web App Development</h3>
+          <p>Scalable web applications, admin portals, SaaS dashboards, and custom backend API integration.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Web%20App%20Development." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-bug-slash"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Bug Fixing &amp; Maintenance</h3>
+          <p>Quick resolution for broken layouts, JavaScript errors, speed bottlenecks, and security patches.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Bug%20Fixing%20%26%20Maintenance." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATEGORY 4: DIGITAL MARKETING -->
+  <section id="cat-digital-marketing" class="category-section">
+    <div class="category-header reveal">
+      <div class="cat-svg-box">
+        <svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+      </div>
+      <div class="cat-header-text">
+        <div class="cat-title-wrap">
+          <h2>Digital Marketing</h2>
+          <span class="cat-count-badge">4 Services</span>
+        </div>
+        <p>Data-backed SEO campaigns, social channel management, paid Google Ads, and targeted email flows.</p>
+      </div>
+    </div>
+
+    <div class="services-price-grid">
+      <!-- Card 1 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>SEO (On-page)</h3>
+          <p>Comprehensive keyword strategy, meta tag optimization, structured data schema, and content tweaks.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20SEO%20(On-page)." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-share-nodes"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Social Media Management</h3>
+          <p>Complete multi-platform post scheduling, community engagement, content calendars, and growth strategy.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Social%20Media%20Management." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-brands fa-google"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Google Ads Setup</h3>
+          <p>High-ROI Search, Display &amp; YouTube ad campaign structure, negative keyword filters, and bidding setup.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Google%20Ads%20Setup." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Email Marketing Setup</h3>
+          <p>Custom HTML email newsletters, automated welcome sequences, subscriber list segmentation, and funnels.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Email%20Marketing%20Setup." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATEGORY 5: VIDEO & AUDIO -->
+  <section id="cat-video-audio" class="category-section">
+    <div class="category-header reveal">
+      <div class="cat-svg-box">
+        <svg viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H9l2 4H8L6 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
+      </div>
+      <div class="cat-header-text">
+        <div class="cat-title-wrap">
+          <h2>Video &amp; Audio</h2>
+          <span class="cat-count-badge">5 Services</span>
+        </div>
+        <p>Pro video editing, 2D motion graphics, crystal-clear voice-overs, and podcast production.</p>
+      </div>
+    </div>
+
+    <div class="services-price-grid">
+      <!-- Card 1 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-film"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Video Editing</h3>
+          <p>High-engagement cuts, seamless transitions, sound design, and color grading for YouTube &amp; Reels.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Video%20Editing." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-play-circle"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>2D Animation</h3>
+          <p>Captivating 2D motion graphics, animated logo reveals, and promo video animations.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%202D%20Animation." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Voice-over</h3>
+          <p>Studio-quality professional voice-over recordings for commercial ads, videos, and tutorials.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Voice-over." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-podcast"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Podcast Editing</h3>
+          <p>Audio cleaning, background noise removal, level balancing, and intro/outro music assembly.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Podcast%20Editing." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-closed-captioning"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Subtitling</h3>
+          <p>Precisely synchronized captions and stylized video subtitles for social media videos and films.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Subtitling." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATEGORY 6: BUSINESS & ADMIN SUPPORT -->
+  <section id="cat-business-admin" class="category-section">
+    <div class="category-header reveal">
+      <div class="cat-svg-box">
+        <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+      </div>
+      <div class="cat-header-text">
+        <div class="cat-title-wrap">
+          <h2>Business &amp; Admin Support</h2>
+          <span class="cat-count-badge">4 Services</span>
+        </div>
+        <p>Virtual assistant tasks, spreadsheet data entry, bookkeeping management, and dedicated support.</p>
+      </div>
+    </div>
+
+    <div class="services-price-grid">
+      <!-- Card 1 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-user-gear"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Virtual Assistant</h3>
+          <p>Remote executive support, calendar organization, inbox filtering, and daily business tasks.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Virtual%20Assistant." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-keyboard"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Data Entry</h3>
+          <p>Fast, error-free typing, CRM data updates, Excel formatting, and web research data collection.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Data%20Entry." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-calculator"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Bookkeeping</h3>
+          <p>Organized financial record keeping, invoice processing, expense tracking, and monthly summary balance.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Bookkeeping." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-headset"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Customer Support</h3>
+          <p>Responsive live website chat management, customer email ticketing, and client communication.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Customer%20Support." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATEGORY 7: SALES & CONSULTING -->
+  <section id="cat-sales-consulting" class="category-section">
+    <div class="category-header reveal">
+      <div class="cat-svg-box">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      </div>
+      <div class="cat-header-text">
+        <div class="cat-title-wrap">
+          <h2>Sales &amp; Consulting</h2>
+          <span class="cat-count-badge">2 Services</span>
+        </div>
+        <p>Targeted B2B lead list building and 1-on-1 strategic growth consulting.</p>
+      </div>
+    </div>
+
+    <div class="services-price-grid">
+      <!-- Card 1 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-bullseye"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Lead Generation</h3>
+          <p>Targeted B2B decision-maker contact discovery, prospect list compilation, and lead prospecting.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Lead%20Generation." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-briefcase"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Business Consulting</h3>
+          <p>Expert 1-on-1 business strategy sessions, marketing audit, positioning strategy, and growth blueprint.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Business%20Consulting." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATEGORY 8: TECH & DATA -->
+  <section id="cat-tech-data" class="category-section">
+    <div class="category-header reveal">
+      <div class="cat-svg-box">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+      </div>
+      <div class="cat-header-text">
+        <div class="cat-title-wrap">
+          <h2>Tech &amp; Data</h2>
+          <span class="cat-count-badge">2 Services</span>
+        </div>
+        <p>In-depth data analytics, business intelligence reports, and quality software testing.</p>
+      </div>
+    </div>
+
+    <div class="services-price-grid">
+      <!-- Card 1 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Data Analysis</h3>
+          <p>Data visualization dashboards, Google Analytics auditing, Looker Studio reports, and trend analysis.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Data%20Analysis." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>QA / Software Testing</h3>
+          <p>Thorough web &amp; mobile app functional testing, responsive UI checking, and detailed bug reporting.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20QA%2FSoftware%20Testing." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATEGORY 9: EDUCATION & COACHING -->
+  <section id="cat-education-coaching" class="category-section">
+    <div class="category-header reveal">
+      <div class="cat-svg-box">
+        <svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+      </div>
+      <div class="cat-header-text">
+        <div class="cat-title-wrap">
+          <h2>Education &amp; Coaching</h2>
+          <span class="cat-count-badge">2 Services</span>
+        </div>
+        <p>1-on-1 skill tutoring sessions and professional online course curriculum setup.</p>
+      </div>
+    </div>
+
+    <div class="services-price-grid">
+      <!-- Card 1 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Online Tutoring</h3>
+          <p>Interactive 1-on-1 mentoring in web design, SEO, digital marketing, coding, or academic topics.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Online%20Tutoring." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Course Creation Help</h3>
+          <p>Curriculum design, slide deck creation, video lesson outline, and LMS platform publishing assistance.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Course%20Creation%20Help." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATEGORY 10: PHOTOGRAPHY -->
+  <section id="cat-photography" class="category-section">
+    <div class="category-header reveal">
+      <div class="cat-svg-box">
+        <svg viewBox="0 0 24 24"><path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+      </div>
+      <div class="cat-header-text">
+        <div class="cat-title-wrap">
+          <h2>Photography</h2>
+          <span class="cat-count-badge">2 Services</span>
+        </div>
+        <p>Professional event photo coverage and high-resolution e-commerce product photography.</p>
+      </div>
+    </div>
+
+    <div class="services-price-grid">
+      <!-- Card 1 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-camera"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Event Photography</h3>
+          <p>Professional corporate event, social function, or launch photo coverage with expert post-retouching.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Event%20Photography." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-price-card reveal">
+        <div class="service-card-head">
+          <div class="service-card-icon"><i class="fa-solid fa-box-open"></i></div>
+        </div>
+        <div class="service-card-body">
+          <h3>Product Photography</h3>
+          <p>Crisp e-commerce catalog photos with clean white background isolation and creative staging.</p>
+        </div>
+        <div class="service-card-footer">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20a%20quote%20for%20Product%20Photography." target="_blank" rel="noopener" class="btn-get-quote rippleize"><span>Get a Quote</span> <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING & PACKAGES SECTION -->
+  <section id="pricing" class="preview-section" style="border-top: 1px dashed var(--border); padding-top: 80px;">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Flexible Growth Plans</span>
+        <h2 class="section-title">Transparent <span>Pricing Packages</span></h2>
+        <p class="section-sub">Choose a monthly growth retainer engineered to scale your traffic, leads, and brand authority.</p>
+      </div>
+      <div id="pricingGrid" class="pricing-grid"></div>
+    </div>
+  </section>
+
+  <!-- PROCESS TIMELINE SECTION -->
+  <section id="process" class="preview-section" style="background: linear-gradient(180deg, transparent, rgba(217, 197, 178, 0.1), transparent);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Methodology</span>
+        <h2 class="section-title">Our Proven <span>Growth Engine</span></h2>
+        <p class="section-sub">A structured, data-informed workflow designed for predictable results.</p>
+      </div>
+      <div id="processGrid" class="process-grid"></div>
+    </div>
+  </section>
+
+  <!-- FREQUENTLY ASKED QUESTIONS -->
+  <section id="faq" class="preview-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+        <p class="section-sub">Everything you need to know about starting a project with AbhiFY.</p>
+      </div>
+      <div id="faqWrap" class="faq-wrap" style="max-width: 840px; margin: 0 auto;"></div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER SECTION -->
+  <section class="cta-banner-section reveal" style="padding: 40px 0 80px;">
+    <div class="container">
+      <div class="cta-banner glass-card" style="padding: 50px 40px; text-align: center; border-radius: var(--radius-card); background: linear-gradient(135deg, rgba(166,124,82,0.12), rgba(217,197,178,0.2)); border: 1px solid var(--border-active);">
+        
+        <!-- 📷 PHOTO SPOT: Custom Service Banner Image - file: custom-service-banner.jpg -->
+        <div style="max-width: 280px; margin: 0 auto 24px; border-radius: 16px; overflow: hidden; border: 2px solid var(--btn-primary); background: rgba(166,124,82,0.06); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
+          <img src="custom-service-banner.jpg" alt="Custom Solutions" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.parentElement.style.display='none';">
+        </div>
+
+        <h2 style="font-family: var(--font-display); font-size: clamp(26px, 3.5vw, 42px); color: var(--text-primary); margin-bottom: 14px; font-weight: 800;">Need a Custom Solution for Your Business?</h2>
+        <p style="color: var(--text-secondary); font-size: 16px; max-width: 600px; margin: 0 auto 28px;">Let's discuss your project scope, targets, and deliver a tailored strategy to outperform your competition.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://wa.me/919569890314?text=Hi%20AbhiFY!%20I%20want%20to%20discuss%20a%20custom%20service%20package." target="_blank" rel="noopener noreferrer" class="nav-cta btn-ripple" style="padding: 14px 32px; font-size: 15px;"><span>Chat on WhatsApp</span> <i class="fa-brands fa-whatsapp"></i></a>
+          <a href="contact.html" class="btn btn-outline" style="padding: 14px 32px; font-size: 15px; border-radius: 100px;"><span>Contact Us</span> <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo-box" aria-label="AbhiFY Home"><img src="logo.jpg" alt="AbhiFY Logo" class="footer-logo-img"></a>
+        <p>Digital. Smart. Profitable. Helping brands grow with data-driven marketing and premium design.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/mrabhi_fy70/?hl=en" target="_blank" rel="noopener noreferrer" class="insta-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61585173705813" target="_blank" rel="noopener noreferrer" class="fb-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/919569890314" target="_blank" rel="noopener noreferrer" class="wa-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="blog.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:abhify07@gmail.com">abhify07@gmail.com</a><a href="tel:+919569890314">+91 9569890314</a><a href="tel:+917080630314">+91 7080630314</a><a href="https://www.instagram.com/abhify07" target="_blank" rel="noopener noreferrer">@abhify07</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AbhiFY. All rights reserved.</p>
+      <p>Digital. Smart. Profitable.</p>
+    </div>
+  </div>
+</footer>
+
+<a id="whatsapp-float" href="https://wa.me/919569890314" target="_blank" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="app.js?v=2"></script>
+<script src="abhi-chat-widget.js" charset="UTF-8"></script>
+</body>
+</html>
