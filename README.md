@@ -8,7 +8,7 @@ Official website of **AbhiFY** ([abhify.com](https://abhify.com)), featuring mod
 
 - **Domain**: [https://abhify.com](https://abhify.com)
 - **Primary Contact**: [mrabhify7080@gmail.com](mailto:mrabhify7080@gmail.com)
-- **GitHub**: [github.com/mrabhify7080](https://github.com/mrabhify7080)
+- **GitHub**: [github.com/mrabhify7080-glitch](https://github.com/mrabhify7080-glitch)
 
 ---
 
@@ -40,7 +40,7 @@ To link this local repository with your GitHub account:
 2. **Connect and push from your terminal**:
    ```bash
    git branch -M main
-   git remote add origin https://github.com/mrabhify7080/abhify.com.git
+   git remote add origin https://github.com/mrabhify7080-glitch/abhify.com.git
    git push -u origin main
    ```
 
